@@ -8,6 +8,7 @@ from io import BytesIO
 from PIL import Image, UnidentifiedImageError
 import pandas as pd 
 
+
 Album = namedtuple('Album', 'album_title image_url')
 
 

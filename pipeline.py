@@ -1,4 +1,4 @@
-from prediction import Model
+from model import Model
 from scraping import get_next_url, scrape_apple_music, get_image
 
 def prediction_pipeline():
