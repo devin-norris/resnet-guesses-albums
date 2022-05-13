@@ -34,7 +34,7 @@ class Model:
             
         Returns:
             ModelResult: predicted class label in natural language with confidence score
-    """
+        """
         x = np.array(img)[np.newaxis, :]
         y_hat = self.model(x).numpy().squeeze()
         I = y_hat.argsort()[::-1]
