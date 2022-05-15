@@ -1,6 +1,8 @@
 requests==2.27.1
 pillow==9.1.0
+python-dotenv==0.20.0
 numpy==1.21.6
 pandas==1.3.5
 tensorflow==2.8.0
+tweepy==4.9.0
 bs4

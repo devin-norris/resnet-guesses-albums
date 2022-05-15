@@ -13,7 +13,7 @@ def get_secrets():
     return API_KEY, API_KEY_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET
 
 
-def twitter_authenticate() -> tweepy.api.API:
+def twitter_authenticate() -> tweepy.API:
     """Authenticate to twitter APIs using tweepy"""
     API_KEY, API_KEY_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET = get_secrets()
     auth = tweepy.OAuthHandler(API_KEY, API_KEY_SECRET)
