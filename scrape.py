@@ -76,6 +76,9 @@ def get_image(image_url: str) -> Image.Image:
     try:
         response = requests.get(image_url)
         img = Image.open(BytesIO(response.content)).resize((224, 224))
+        with open('image.jpg', 'wb') as image:
+            for chunk in response:
+                image.write(chunk)
         return img
     except UnidentifiedImageError:
         logging.warning(f"{image_url} not found, record skipped and deleted")
